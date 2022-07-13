@@ -26,7 +26,7 @@ Try running the following commands:
 - Create a file **_packages.yml_**
 - Open fivetran logs from [here](https://hub.getdbt.com/fivetran/fivetran_log/latest/)
 - Copy to **_packages.yml_**
-- Then run the following command:
+- Then run the following command to install the fivetran logs packages:
 
 ```bash
 $ dbt deps
