@@ -15,19 +15,25 @@ Try running the following commands:
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
+# Fivetran transformations for DBT core
+
+## Fivetran log connector
+
 [LINK](https://fivetran.com/docs/transformations/dbt/data-models/fivetran-log-connector-data-model)
 
-Steps to follow:
+### Steps to follow:
+
 - Create a file **_packages.yml_**
-- Open fivetran logs from [link](https://hub.getdbt.com/fivetran/fivetran_log/latest/)  
-- Copy to **_packages.yml_**  
-- Then run the following command
+- Open fivetran logs from [here](https://hub.getdbt.com/fivetran/fivetran_log/latest/)
+- Copy to **_packages.yml_**
+- Then run the following command:
 
 ```bash
 $ dbt deps
 ```
 
-Command to run the model:
+### Command to run the model:
+
 ```bash
 $ dbt run --models fivetran_log
 # This runs the models in the folder fivetran_log
@@ -37,3 +43,10 @@ $ dbt run --models fivetran_log
 $ dbt docs generate && dbt docs serve
 # Opens a webpage that showas all the repo, model and dependecies along with lineage graph
 ```
+
+## Connection in Fivetran
+
+- Got to Transformations
+- Click on Configure
+- Copy the SSH key and add it to the github
+- Fill up the details and connect
